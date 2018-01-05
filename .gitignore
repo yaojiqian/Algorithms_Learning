@@ -38,3 +38,6 @@ local.properties
 
 # Java annotation processor (APT)
 .factorypath
+
+# Code Recommenders
+.recommenders/
