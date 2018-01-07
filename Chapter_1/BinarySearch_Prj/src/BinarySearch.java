@@ -33,6 +33,12 @@ public class BinarySearch {
 		return -1;
 	}
 	
+	/**
+	 * Find the key in the array
+	 * @param key
+	 * @param a
+	 * @return
+	 */
 	public static int rank_density(int key, int[] a) {
 		
 		int lo = 0;
@@ -82,8 +88,16 @@ public class BinarySearch {
 			int key = StdIn.readInt();
 			//if (rank(key, whitelist) < 0)
 			//if(rank_recurse(key, whitelist) < 0)
-			if(rank_density(key, whitelist) < 0)
+			if(rank_density(key, whitelist) < 0) {
+				StdOut.print("+");
 				StdOut.println(key);
+			}else {
+				StdOut.print("-");
+				StdOut.println(key);
+			}
+			/* 1.1.23 Add to the BinarySearch test client the ability to respond to a second argument:
+			 * + to print numbers from standard input that are not in the whitelist, - to print
+			 * numbers that are in the whitelist. */
 		}
 	}
 
